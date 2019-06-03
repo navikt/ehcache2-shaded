@@ -6,7 +6,7 @@
 
     <artifactId>ehcache2-shaded</artifactId>
     <groupId>no.nav.arbeid.pam</groupId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>ehcache2-shaded</name>
     <description>Ehcache2 pakket med maven-shade-plugin slik at man også kan bruke ehcache 3 i samme prosjekt</description>
