@@ -9,7 +9,8 @@
     <version>2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>ehcache2-shaded</name>
-    <description>Ehcache2 pakket med maven-shade-plugin slik at man også kan bruke ehcache 3 i samme prosjekt</description>
+    <description>Ehcache2 pakket med maven-shade-plugin slik at man også kan bruke ehcache 3 i samme prosjekt
+    </description>
 
     <build>
         <plugins>
@@ -55,44 +56,19 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-        <scm>
-                <connection>scm:git:https://github.com/navikt/ehcache2-shaded.git</connection>
-                <developerConnection>scm:git:https://github.com/navikt/ehcache2-shaded.git</developerConnection
->
-                <tag>HEAD</tag>
-        </scm>
 
-        <repositories>
-                <repository>
-                        <id>repo.adeo.no</id>
-                        <name>Maven repo i iApp-sonen</name>
-                        <url>https://repo.adeo.no/repository</url>
-                </repository>
-                <repository>
-                        <id>palantir</id>
-                        <name>Repo for palantir</name>
-                        <url>https://dl.bintray.com/palantir/releases</url>
-                </repository>
-                <repository>
-                        <id>confluent</id>
-                        <name>Maven repo i iApp-sonen (confluent)</name>
-                        <url>https://repo.adeo.no/repository/confluent.io</url>
-                </repository>
-        </repositories>
+    <scm>
+        <connection>scm:git:https://github.com/navikt/ehcache2-shaded.git</connection>
+        <developerConnection>scm:git:https://github.com/navikt/ehcache2-shaded.git:</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
-        <distributionManagement>
-                <repository>
-                        <id>m2internal</id>
-                        <name>NAV Maven2 Internal Repository</name>
-                        <url>https://repo.adeo.no/repository/maven-releases/</url>
-                </repository>
-                <snapshotRepository>
-                        <id>m2snapshot</id>
-                        <name>NAV Maven2 Snapshot Repository</name>
-                        <url>https://repo.adeo.no/repository/maven-snapshots/</url>
-                        <uniqueVersion>false</uniqueVersion>
-                </snapshotRepository>
-        </distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/navikt/ehcache2-shaded</url>
+        </repository>
+    </distributionManagement>
 
 </project>
 
